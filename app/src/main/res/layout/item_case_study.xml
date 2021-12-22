@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/distance_1x"
+    android:layout_marginBottom="@dimen/distance_1x"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/hero_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/case_study_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="@dimen/distance_2x"
+        android:paddingTop="@dimen/distance_2x"
+        android:paddingEnd="@dimen/distance_2x"
+        android:paddingBottom="@dimen/distance_2x"
+        app:layout_constraintTop_toBottomOf="@id/hero_image_iv">
+
+        <TextView
+            android:id="@+id/category_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="@dimen/font_size_1x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Transport" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_1x"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="@dimen/font_size_1_25x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/category_tv"
+            tools:text="Exploring the future of urban car use" />
+
+        <TextView
+            android:id="@+id/client_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_1x"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="@dimen/font_size_1_125x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            tools:text="Ford" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

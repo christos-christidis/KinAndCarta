@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Case Studies</string>
+    <string name="case_study_image">Case study image</string>
+    <string name="our_work">Our Work</string>
+    <string name="story_image">Story image</string>
+    <string name="category_x">Category: %1$s</string>
+</resources>

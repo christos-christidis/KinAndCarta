@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/client_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/distance_2x"
+            android:layout_marginTop="@dimen/distance_1x"
+            android:layout_marginEnd="@dimen/distance_2x"
+            android:background="@color/dark_bg"
+            android:fontFamily="@font/dm_sans"
+            android:gravity="center"
+            android:textColor="@color/gray_on_dark"
+            android:textSize="@dimen/font_size_1_125x"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ford" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/distance_2x"
+            android:layout_marginTop="@dimen/distance_1x"
+            android:layout_marginEnd="@dimen/distance_2x"
+            android:background="@color/dark_bg"
+            android:fontFamily="@font/dm_serif_display"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_2x"
+            app:layout_constraintTop_toBottomOf="@id/client_tv"
+            tools:text="Exploring the future of urban car use" />
+
+        <ImageView
+            android:id="@+id/hero_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/distance_2x"
+            android:layout_marginTop="@dimen/distance_2x"
+            android:layout_marginEnd="@dimen/distance_2x"
+            android:contentDescription="@string/case_study_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/story_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hero_image_iv"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_story_section" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

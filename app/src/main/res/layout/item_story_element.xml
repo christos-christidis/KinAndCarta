@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_2x"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/gray_on_dark"
+        android:textSize="@dimen/font_size_1x"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="By 2040, there are expected to be a staggering 9 billion people living in cities around the world. This increase in population creates an urgent challenge: over the next 25 years, many of our cities will enter a state of ‘global gridlock’, with insufficient room or roads to support the demand for cars."
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/distance_2x"
+        android:contentDescription="@string/story_image"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>

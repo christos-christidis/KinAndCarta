@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/super_light_gray_bg"
+    android:paddingBottom="@dimen/distance_2x">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_bg"
+        android:fontFamily="@font/dm_serif_display"
+        android:gravity="center"
+        android:paddingTop="@dimen/distance_2x"
+        android:paddingBottom="@dimen/distance_2x"
+        android:text="@string/our_work"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_2x"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/case_studies_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/distance_2x"
+        android:layout_marginTop="@dimen/distance_2x"
+        android:layout_marginEnd="@dimen/distance_2x"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_case_study" />
+</androidx.constraintlayout.widget.ConstraintLayout>

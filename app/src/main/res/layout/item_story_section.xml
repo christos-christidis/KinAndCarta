@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/distance_2x"
+    android:paddingBottom="@dimen/distance_2x"
+    tools:background="@color/dark_bg">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distance_2x"
+        android:layout_marginEnd="@dimen/distance_2x"
+        android:fontFamily="@font/dm_serif_display"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_1_5x"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ford partnered with Kin + Carta with a specific question in mind: what does a viable, on demand car sharing service look like?" />
+
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distance_2x"
+        android:layout_marginTop="@dimen/distance_2x"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        tools:text="Category: Mobile and Web Development UX Research and Design Transport Create"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/distance_2x"
+        android:layout_marginTop="@dimen/distance_2x"
+        android:background="@color/purple_divider"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_tv"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="category_tv, divider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/story_elements_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/distance_2x"
+        android:paddingEnd="@dimen/distance_2x"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_story_element" />
+</androidx.constraintlayout.widget.ConstraintLayout>
