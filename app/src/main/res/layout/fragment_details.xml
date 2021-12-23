@@ -51,7 +51,7 @@
             android:contentDescription="@string/case_study_image"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toBottomOf="@id/title_tv"
-            tools:src="@drawable/ic_launcher_background" />
+            tools:src="@drawable/ic_launcher_foreground" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/story_rv"

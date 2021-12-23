@@ -14,8 +14,7 @@ data class CaseStudiesResponse(val case_studies: List<NetworkCaseStudy>) {
         val hero_image: String,
         val app_store_url: String?,
         val sections: List<StorySection>
-    ) {
-    }
+    )
 
     data class StorySection(
         val title: String?,

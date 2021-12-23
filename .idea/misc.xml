@@ -12,7 +12,9 @@
         <entry key="app/src/main/res/layout/item_case_study.xml" value="0.2786516853932584" />
         <entry key="app/src/main/res/layout/item_image_element.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/item_story_element.xml" value="0.35572916666666665" />
-        <entry key="app/src/main/res/layout/item_story_section.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/item_story_section.xml" value="0.6434316353887399" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2140625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2140625" />
       </map>
     </option>
   </component>

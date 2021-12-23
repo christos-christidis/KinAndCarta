@@ -8,15 +8,21 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.christidischristos.kinandcarta.ui.list.ListFragment"
+        android:label="@string/our_work"
         tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_details"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
     </fragment>
 
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.christidischristos.kinandcarta.ui.details.DetailsFragment"
+        android:label="@string/case_study_details"
         tools:layout="@layout/fragment_details">
         <argument
             android:name="caseStudy"

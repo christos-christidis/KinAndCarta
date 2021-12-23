@@ -15,7 +15,7 @@
         android:contentDescription="@string/case_study_image"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_launcher_background" />
+        tools:src="@drawable/ic_launcher_foreground" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
